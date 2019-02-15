@@ -2,11 +2,11 @@ package Utils;
 
 import AbstractClasses.AbstractStack;
 import DesignPatternClasses.ListFactory;
+import Interfaces.List;
 
-import java.util.List;
 
 public class ListStack<E> extends AbstractStack<E> {
-    protected List<E> data;
+    protected List data;
 
 
     public ListStack(String requiredList){

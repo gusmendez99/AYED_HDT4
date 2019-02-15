@@ -1,9 +1,10 @@
 package DesignPatternClasses;
+import Interfaces.List;
 import Utils.CircularList;
 import Utils.DoublyLinkedList;
 import Utils.SinglyLinkedList;
 
-import java.util.List;
+
 
 public class ListFactory {
     //Regresa el stack necesario
