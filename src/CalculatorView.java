@@ -5,6 +5,7 @@ import Models.MyCalculator;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceDialog;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -17,6 +18,8 @@ import javafx.stage.Stage;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -34,6 +37,10 @@ public class CalculatorView {
      * File chooser for pick the text file with the math expressions
      */
     final FileChooser fileChooser = new FileChooser();
+
+    private final String [] arrayData = {"VECTOR", "ARRAYLIST", "LIST"};
+    private final String [] arrayDataForLists = {"SINGLE", "DOUBLE", "CIRCULAR"};
+    private List<String> dialogData, dialogDataList;
 
     /**
      * To return a cleaned String of the math expression
@@ -162,7 +169,56 @@ public class CalculatorView {
 
         ArrayList<String> finalInputArrayList;
         Calculator myCalculator = MyCalculator.getInstance();
-        Stack myPila = StackFactory.getStack("LIST", "CIRCULAR");
+        Stack myPila = null;
+
+        //For Stack choice. Dialog with strings
+        dialogData = Arrays.asList(arrayData);
+
+        ChoiceDialog dialog = new ChoiceDialog(dialogData.get(0), dialogData);
+        dialog.setTitle("Tipo de Stack");
+        dialog.setHeaderText("Selecciona un tipo de stack: ");
+
+        Optional<String> optionalResult = dialog.showAndWait();
+        String selected = "";
+
+        if (optionalResult.isPresent()) {
+            selected = optionalResult.get();
+            switch (selected){
+                case "VECTOR":
+                   myPila = StackFactory.getStack("VECTOR", "");
+                   break;
+                case "ARRAYLIST":
+                    myPila = StackFactory.getStack("ARRAYLIST", "");
+                    break;
+                case "LIST":
+                    dialogDataList = Arrays.asList(arrayDataForLists);
+
+                    ChoiceDialog dialogList = new ChoiceDialog(dialogDataList.get(0), dialogDataList);
+                    dialogList.setTitle("Tipo de List");
+                    dialogList.setHeaderText("Selecciona un tipo de lista: ");
+
+                    Optional<String> resultList = dialogList.showAndWait();
+                    String selectedList = "";
+
+                    if (resultList.isPresent()) {
+                        selectedList = resultList.get();
+                        switch (selectedList) {
+                            case "SINGLE":
+                                myPila = StackFactory.getStack("LIST", "SINGLE");
+                                break;
+                            case "DOUBLE":
+                                myPila = StackFactory.getStack("LIST", "DOUBLE");
+                                break;
+                            case "CIRCULAR":
+                                myPila = StackFactory.getStack("LIST", "CIRCULAR");
+                                break;
+                        }
+
+                    }
+                    break;
+            }
+        }
+
         finalInputArrayList = cleanInput(line, acceptedInputs);
 
         int result = 0;

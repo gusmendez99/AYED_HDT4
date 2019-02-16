@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6417f7bb-491d-4809-a4f1-79e32ac9e5f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CalculatorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PreguntaSobreSingleton.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/prueba.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uml_hdt4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/MyCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/MyCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculatorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +14,48 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CalculatorView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CalculatorView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="199" column="56" selection-start-line="199" selection-start-column="56" selection-end-line="199" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#cleanInput#0;class#CalculatorView#0" />
+                <element signature="method#showCalculator#0;class#CalculatorView#0" />
+                <element signature="method#readFile#0;class#CalculatorView#0" />
+                <element signature="method#addVBox#0;class#CalculatorView#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DesignPatternClasses/ListFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DesignPatternClasses/StackFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,6 +71,8 @@
       <find>removeL</find>
       <find>remo</find>
       <find>mipila</find>
+      <find>operate</find>
+      <find>result</find>
     </findStrings>
     <replaceStrings>
       <replace>myPila</replace>
@@ -66,15 +104,15 @@
         <option value="$PROJECT_DIR$/src/Utils/VectorStack.java" />
         <option value="$PROJECT_DIR$/src/Models/MyCalculator.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/CalculatorView.java" />
         <option value="$PROJECT_DIR$/src/prueba.txt" />
+        <option value="$PROJECT_DIR$/src/CalculatorView.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1368" />
-    <option name="y" value="-146" />
-    <option name="width" value="1376" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -96,6 +134,12 @@
               <item name="AYED_HDT4" type="b2602c69:ProjectViewProjectNode" />
               <item name="AYED_HDT4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AYED_HDT4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AYED_HDT4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DesignPatternClasses" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -182,7 +226,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1368" y="-146" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -193,12 +238,12 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28052804" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27887788" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286385" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17656766" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34653464" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49921754" visible="true" weight="0.20896657" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921754" visible="true" weight="0.20801815" />
       <window_info anchor="bottom" id="JProfiler" />
       <window_info id="Structure" order="6" sideWeight="0.5007825" side_tool="true" weight="0.17246597" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -521,26 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/ListStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DesignPatternClasses/ListFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/DoublyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -572,16 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DesignPatternClasses/StackFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/VectorStack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-309">
@@ -609,17 +624,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/ListStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DesignPatternClasses/ListFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DesignPatternClasses/StackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CalculatorView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="152" column="40" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
+        <state relative-caret-position="175">
+          <caret line="199" column="56" selection-start-line="199" selection-start-column="56" selection-end-line="199" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#cleanInput#0;class#CalculatorView#0" />
             <element signature="method#showCalculator#0;class#CalculatorView#0" />
-            <element signature="method#addHBox#0;class#CalculatorView#0" />
             <element signature="method#readFile#0;class#CalculatorView#0" />
-            <element signature="method#operate#0;class#CalculatorView#0" />
             <element signature="method#addVBox#0;class#CalculatorView#0" />
           </folding>
         </state>
