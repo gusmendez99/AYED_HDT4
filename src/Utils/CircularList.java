@@ -4,9 +4,12 @@ import AbstractClasses.AbstractList;
 
 public class CircularList<E> extends AbstractList<E> {
 
-    protected Node<E> tail;
-    protected int count;
+    private Node<E> tail;
+    private int count;
 
+    /**
+     * constructs a new circular list
+     */
     public CircularList()
 // pre: constructs a new circular list
     {
@@ -14,11 +17,15 @@ public class CircularList<E> extends AbstractList<E> {
         count = 0;
     }
 
+    /**
+     * adds element to head of list
+     * @param value the value of the new Node to add
+     */
     public void addFirst(E value)
 // pre: value non-null
 // post: adds element to head of list
     {
-        Node<E> temp = new Node<E>(value);
+        Node<E> temp = new Node<>(value);
         if (tail == null) { // first value added
             tail = temp;
             tail.setNext(tail);
@@ -29,7 +36,10 @@ public class CircularList<E> extends AbstractList<E> {
         count++;
     }
 
-
+    /**
+     * Adds a new Node as the tail of list
+     * @param value the value of the new Node
+     */
     public void addLast(E value)
 // pre: value non-null
 // post: adds element to tail of list
@@ -39,9 +49,10 @@ public class CircularList<E> extends AbstractList<E> {
         tail = tail.next();
     }
 
-
-// lo dificil es quitar el elemento de la cola
-
+    /**
+     * Removes the last Node (tail) of the list
+     * @return the value of the recently removed Node
+     */
     public E removeLast()
         // pre: !isEmpty()
         // post: returns and removes value from tail of list
@@ -61,5 +72,13 @@ public class CircularList<E> extends AbstractList<E> {
         }
         count--;
         return temp.value();
+    }
+
+    /**
+     * Returns the size of the list
+     * @return count attribute of the list
+     */
+    public int size(){
+        return this.count;
     }
 }

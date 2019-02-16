@@ -16,12 +16,13 @@ public class ListStack<E> extends AbstractStack<E> {
 
     @Override
     public void push(E item) {
-        super.push(item);
+        data.addLast(item);
     }
 
     @Override
     public E pop() {
-        return super.pop();
+        Object value = data.removeLast();
+        return (E)value;
     }
 
     @Override
@@ -31,11 +32,11 @@ public class ListStack<E> extends AbstractStack<E> {
 
     @Override
     public boolean empty() {
-        return super.empty();
+        return data.size() == 0;
     }
 
     @Override
     public int size() {
-        return super.size();
+        return data.size();
     }
 }

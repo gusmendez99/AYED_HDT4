@@ -1,9 +1,9 @@
 package Utils;
 
 public class DoublyLinkedNode<E> {
-    protected E data;
-    protected DoublyLinkedNode<E> nextElement;
-    protected DoublyLinkedNode<E> previousElement;
+    private E data;
+    private DoublyLinkedNode<E> nextElement;
+    private DoublyLinkedNode<E> previousElement;
 
     public DoublyLinkedNode(E v,
                             DoublyLinkedNode<E> next,
