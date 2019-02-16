@@ -4,6 +4,25 @@ import Interfaces.Calculator;
  * Implementation of the Calculator interface
  */
 public class MyCalculator implements Calculator {
+
+    /**
+     * private instance for Singleton
+     */
+    private static MyCalculator instance;
+
+    private MyCalculator(){}
+
+    /**
+     * For return an unique instance of MyCalculator
+     * @return MyCalculator instance
+     */
+    public static MyCalculator getInstance(){
+        if(instance == null){
+            instance = new MyCalculator();
+        }
+        return instance;
+    }
+
     /**
      * To calculate the result of two numbers, digits 0-9 only
      * @param num1 first picked number of the String
