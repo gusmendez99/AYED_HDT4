@@ -3,6 +3,16 @@ package Utils;
 import AbstractClasses.AbstractStack;
 
 import java.util.Vector;
+/**
+ * date 02/15/2019
+ * @author  Gustavo Andrés, Carné 18500
+ * @author  Luis Urbina, Carné 18473
+ * This program is designed to calculate a postfix operation using multiple data structures
+ * The user will be able to choose between 3 options of stacks and in case he or she selects the
+ * ListStack type of Stack, a new window will be prompted asking for what kind of implementation
+ * of List he / she wants to use to test the program. All choices point in the same direction, solve
+ * the same problem. Code was mostly extracted from Java Structures from Bailey, D.
+ */
 
 public class VectorStack<E> extends AbstractStack<E> {
     private Vector<E> data;
